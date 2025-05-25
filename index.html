@@ -11,48 +11,57 @@
             box-sizing: border-box;
             font-family: Arial, sans-serif;
         }
+
         body {
             background-color: #f8f9fa;
         }
+
         .app-container {
             max-width: 390px;
             height: 100vh;
             margin: 0 auto;
-            background-color: #C11B1F;
+            background-color: #eb2529;
             overflow: hidden;
             display: flex;
             flex-direction: column;
         }
+
         .header {
-            background-color: #C11B1F;
+            background-color: #eb2529;
             padding: 16px;
             display: flex;
             justify-content: space-between;
             align-items: center;
             color: white;
         }
+
         .screen-content {
-            background-color: #C11B1F;
+            background-color: #eb2529;
             padding: 16px;
             height: calc(100% - 64px);
             overflow-y: auto;
         }
+
         .logo-container {
             width: 40%;
             text-align: left;
         }
-        .logo-container img {
-            height: 40px;
-        }
+
+            .logo-container img {
+                height: 40px;
+            }
+
         .location-container {
             display: flex;
             align-items: center;
             font-size: 14px;
         }
+
         .location-icon {
             margin-right: 6px;
             font-size: 18px;
         }
+
         .alert-box {
             background-color: #FFC72C;
             padding: 10px;
@@ -61,11 +70,13 @@
             border-radius: 5px;
             font-weight: bold;
         }
+
         .content {
             flex: 1;
             padding: 0 16px 16px;
             overflow-y: auto;
         }
+
         .beer-banner {
             background-color: white;
             border-radius: 8px;
@@ -73,13 +84,15 @@
             margin-bottom: 24px;
             cursor: pointer;
         }
-        .beer-banner img {
-            width: 100%;
-            height: 100%;
-            display: block;
-            margin: 0 auto;
-            border-radius: 4px;
-        }
+
+            .beer-banner img {
+                width: 100%;
+                height: 100%;
+                display: block;
+                margin: 0 auto;
+                border-radius: 4px;
+            }
+
         .menu-title {
             color: white;
             text-align: center;
@@ -87,12 +100,14 @@
             margin-bottom: 20px;
             font-size: 1.2rem;
         }
+
         .menu-grid {
             display: grid;
             grid-template-columns: 1fr 1fr;
             gap: 16px;
             margin-bottom: 40px;
         }
+
         .menu-item {
             background-color: white;
             border: 2px solid #FFC72C;
@@ -105,19 +120,23 @@
             justify-content: center;
             cursor: pointer;
         }
-        .menu-item.special {
-            background-color: #FFC72C;
-        }
+
+            .menu-item.special {
+                background-color: #FFC72C;
+            }
+
         .menu-item-icon {
             font-size: 36px;
             margin-bottom: 12px;
-            color: #C11B1F;
+            color: #eb2529;
         }
+
         .menu-item-text {
-            color: #C11B1F;
+            color: #eb2529;
             font-weight: 600;
             text-align: center;
         }
+
         .footer {
             background-color: #FFC72C;
             padding: 12px;
@@ -126,20 +145,24 @@
             font-size: 0.875rem;
             margin-top: auto;
         }
+
         .screen {
             display: none;
             height: 100%;
         }
-        .screen.active {
-            display: block;
-        }
+
+            .screen.active {
+                display: block;
+            }
+
         .screen-header {
-            background-color: #C11B1F;
+            background-color: #eb2529;
             padding: 16px;
             display: flex;
             align-items: center;
             color: white;
         }
+
         .back-button {
             background: none;
             border: none;
@@ -148,6 +171,7 @@
             margin-right: 16px;
             cursor: pointer;
         }
+
         .menu-section {
             background-color: white;
             border-radius: 8px;
@@ -155,9 +179,11 @@
             margin-bottom: 16px;
             width: 100%;
         }
-        .menu-section:last-child {
-            margin-bottom: 0;
-        }
+
+            .menu-section:last-child {
+                margin-bottom: 0;
+            }
+
         .section-title {
             color: #006400;
             font-weight: bold;
@@ -166,6 +192,7 @@
             padding-bottom: 5px;
             border-bottom: 1px solid #eee;
         }
+
         .section-banner {
             width: 100%;
             height: 64px;
@@ -174,73 +201,79 @@
             margin-bottom: 12px;
             object-fit: cover;
         }
+
         .menu-list {
             list-style: none;
             width: 100%;
         }
-     .menu-list-item {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 12px;
-    width: 100%;
-    padding: 8px 0;
-}
+
+        .menu-list-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 12px;
+            width: 100%;
+            padding: 8px 0;
+        }
 
 
-.menu-item-info {
-    flex: 1;
-    min-width: 0;
-    padding-right: 10px;
-}
+        .menu-item-info {
+            flex: 1;
+            min-width: 0;
+            padding-right: 10px;
+        }
 
-.menu-item-name {
-    font-weight: 500;
-    color: #333;
-    line-height: 1.3;
-    word-wrap: break-word;
-}
+        .menu-item-name {
+            font-weight: 500;
+            color: #333;
+            line-height: 1.3;
+            word-wrap: break-word;
+        }
 
-.price-controls-container {
-    display: flex;
-    align-items: center;
-    gap: 12px;
-    flex-shrink: 0;
-    min-width: 120px;
-}
+        .price-controls-container {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            flex-shrink: 0;
+            min-width: 120px;
+        }
 
-.item-price {
-    font-weight: 600;
-    color: #C11B1F;
-    font-size: 16px;
-    min-width: 60px;
-    text-align: right;
-}
+        .item-price {
+            font-weight: 600;
+            color: #eb2529;
+            font-size: 16px;
+            min-width: 60px;
+            text-align: right;
+        }
 
-.item-controls {
-    min-width: 50px;
-    display: flex;
-    justify-content: center;
-}
+        .item-controls {
+            min-width: 50px;
+            display: flex;
+            justify-content: center;
+        }
+
         #alcohol-screen .menu-list-item {
             width: 100%;
             display: flex;
             justify-content: space-between;
         }
-      .menu-list-item span:first-child {
-    flex: 1;
-    min-width: 60%;
-    max-width: 70%;         
-    word-wrap: break-word;  
-}
+
+        .menu-list-item span:first-child {
+            flex: 1;
+            min-width: 60%;
+            max-width: 70%;
+            word-wrap: break-word;
+        }
 
         .menu-list-item span:last-child {
             text-align: right;
             min-width: 60px;
         }
+
         .menu-list-item:last-child {
             margin-bottom: 0;
         }
+
         .offer-card {
             background-color: #FFC72C;
             border: 2px solid white;
@@ -249,26 +282,31 @@
             margin-bottom: 16px;
             cursor: pointer;
         }
-        .offer-card h2 {
-            color: #C11B1F;
-            font-weight: bold;
-            font-size: 1.125rem;
-            margin-bottom: 8px;
-        }
-        .offer-card p {
-            color: #000;
-            margin-bottom: 8px;
-        }
-        .offer-card .claim {
-            display: flex;
-            justify-content: flex-end;
-            align-items: center;
-        }
-        .offer-card .claim span {
-            color: #C11B1F;
-            font-weight: 500;
-            margin-right: 4px;
-        }
+
+            .offer-card h2 {
+                color: #eb2529;
+                font-weight: bold;
+                font-size: 1.125rem;
+                margin-bottom: 8px;
+            }
+
+            .offer-card p {
+                color: #000;
+                margin-bottom: 8px;
+            }
+
+            .offer-card .claim {
+                display: flex;
+                justify-content: flex-end;
+                align-items: center;
+            }
+
+                .offer-card .claim span {
+                    color: #eb2529;
+                    font-weight: 500;
+                    margin-right: 4px;
+                }
+
         .featured {
             background-color: #FEF9E7;
             border-left: 3px solid #FFC72C;
@@ -287,7 +325,7 @@
 
         #cart-count {
             background-color: #FFC72C;
-            color: #C11B1F;
+            color: #eb2529;
             border-radius: 50%;
             padding: 2px 6px;
             font-size: 12px;
@@ -296,63 +334,65 @@
             text-align: center;
         }
 
-     .add-to-cart-btn {
-    background-color: #C11B1F;
-    color: white;
-    border: none;
-    padding: 6px 12px;
-    border-radius: 4px;
-    cursor: pointer;
-    font-size: 12px;
-    font-weight: bold;
-    white-space: nowrap;
-    min-width: 45px;
-    transition: background-color 0.2s;
-}
-        .add-to-cart-btn:hover {
-            background-color: #a01519;
+        .add-to-cart-btn {
+            background-color: #eb2529;
+            color: white;
+            border: none;
+            padding: 6px 12px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 12px;
+            font-weight: bold;
+            white-space: nowrap;
+            min-width: 45px;
+            transition: background-color 0.2s;
         }
 
-.menu-list-item {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 12px;
-    width: 100%;
-    align-items: center;
-    flex-wrap: wrap;
-}
+            .add-to-cart-btn:hover {
+                background-color: #a01519;
+            }
+
+        .menu-list-item {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 12px;
+            width: 100%;
+            align-items: center;
+            flex-wrap: wrap;
+        }
 
 
-      .quantity-controls {
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    min-width: 80px;
-    justify-content: center;
-}
+        .quantity-controls {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            min-width: 80px;
+            justify-content: center;
+        }
 
-.quantity-btn {
-    background-color: #C11B1F;
-    color: white;
-    border: none;
-    width: 22px;
-    height: 22px;
-    border-radius: 50%;
-    cursor: pointer;
-    font-weight: bold;
-    font-size: 14px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: background-color 0.2s;
-}
+        .quantity-btn {
+            background-color: #eb2529;
+            color: white;
+            border: none;
+            width: 22px;
+            height: 22px;
+            border-radius: 50%;
+            cursor: pointer;
+            font-weight: bold;
+            font-size: 14px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: background-color 0.2s;
+        }
 
-.quantity-controls span {
-    min-width: 20px;
-    text-align: center;
-    font-weight: 600;
-    font-size: 14px;
-}
+        .quantity-controls span {
+            min-width: 20px;
+            text-align: center;
+            font-weight: 600;
+            font-size: 14px;
+        }
+
         .cart-item {
             background-color: white;
             padding: 16px;
@@ -385,14 +425,14 @@
             text-align: center;
         }
 
-        .cart-total h3 {
-            color: #C11B1F;
-            font-size: 1.2rem;
-            margin-bottom: 8px;
-        }
+            .cart-total h3 {
+                color: #eb2529;
+                font-size: 1.2rem;
+                margin-bottom: 8px;
+            }
 
         .order-btn {
-            background-color: #C11B1F;
+            background-color: #eb2529;
             color: white;
             border: none;
             padding: 16px;
@@ -413,12 +453,14 @@
             font-size: 64px;
             margin-bottom: 16px;
         }
+
         .size-selector {
             display: flex;
             gap: 5px;
             margin-top: 5px;
             flex-wrap: wrap;
         }
+
         .size-btn {
             background-color: #f0f0f0;
             border: 1px solid #ddd;
@@ -429,29 +471,31 @@
             transition: all 0.2s;
             white-space: nowrap;
         }
-        .size-btn.selected {
-            background-color: #C11B1F;
-            color: white;
-            border-color: #C11B1F;
-        }
-        .size-btn:hover {
-            background-color: #e0e0e0;
-        }
-        .size-btn.selected:hover {
-            background-color: #a01519;
-        }
+
+            .size-btn.selected {
+                background-color: #eb2529;
+                color: white;
+                border-color: #eb2529;
+            }
+
+            .size-btn:hover {
+                background-color: #e0e0e0;
+            }
+
+            .size-btn.selected:hover {
+                background-color: #a01519;
+            }
     </style>
 
 </head>
-<body>
     <div class="app-container">
         <!-- Home Screen -->
         <div id="home-screen" class="screen active">
             <div class="header">
                 <div class="logo-container">
-                    <img src="images/logo.png" alt="The King of Good Times logo">
+                    <h1>WELCOME</h1>
                 </div>
-                
+
                 <div class="cart-icon" onclick="showScreen('cart')">
                     🛒 <span id="cart-count">0</span>
                 </div>
@@ -498,7 +542,46 @@
                 </div>
             </div>
             <div class="screen-content">
-            <!-- BEER SECTION -->
+                <!-- Premium Beers Section -->
+                <div class="menu-section">
+                    <h2 class="section-title">TRENDING NOW</h2>
+                    <ul class="menu-list">
+                        <li class="menu-list-item featured">
+                            <div class="menu-item-info">
+                                <div class="menu-item-name">King Fisher Premium</div>
+                            </div>
+                            <div class="price-controls-container">
+                                <div class="item-price">₹340</div>
+                                <div class="item-controls" data-name="King Fisher Premium" data-price="340">
+                                    <button class="add-to-cart-btn" onclick="addToCart(this)">Add</button>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="menu-list-item featured">
+                            <div class="menu-item-info">
+                                <div class="menu-item-name">Heineken</div>
+                            </div>
+                            <div class="price-controls-container">
+                                <div class="item-price">₹380</div>
+                                <div class="item-controls" data-name="Heineken" data-price="380">
+                                    <button class="add-to-cart-btn" onclick="addToCart(this)">Add</button>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="menu-list-item featured">
+                            <div class="menu-item-info">
+                                <div class="menu-item-name">Amstel</div>
+                            </div>
+                            <div class="price-controls-container">
+                                <div class="item-price">₹360</div>
+                                <div class="item-controls" data-name="Amstel" data-price="360">
+                                    <button class="add-to-cart-btn" onclick="addToCart(this)">Add</button>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <!-- BEER SECTION -->
                 <div class="menu-section">
                     <h2 class="section-title">BEER</h2>
                     <h3 style="color:#B22222; margin:10px 0 4px 0;">KINGFISHER DRAUGHT BEER</h3>
@@ -584,6 +667,44 @@
                         <li class="menu-list-item"><div class="menu-item-info"><div class="menu-item-name">Budweiser Mild</div></div><div class="price-controls-container"><div class="item-price">₹310</div><div class="item-controls" data-name="Budweiser Mild Can" data-price="310"><button class="add-to-cart-btn" onclick="addToCart(this)">Add</button></div></div></li>
                         <li class="menu-list-item"><div class="menu-item-info"><div class="menu-item-name">Tuborg Strong</div></div><div class="price-controls-container"><div class="item-price">₹280</div><div class="item-controls" data-name="Tuborg Strong Can" data-price="280"><button class="add-to-cart-btn" onclick="addToCart(this)">Add</button></div></div></li>
                         <li class="menu-list-item"><div class="menu-item-info"><div class="menu-item-name">Budweiser Magnum</div></div><div class="price-controls-container"><div class="item-price">₹325</div><div class="item-controls" data-name="Budweiser Magnum Can" data-price="325"><button class="add-to-cart-btn" onclick="addToCart(this)">Add</button></div></div></li>
+                    </ul>
+                </div>
+                <div class="menu-section">
+                    <h2 class="section-title">BREEZER & SOFT DRINKS</h2>
+                    <ul class="menu-list">
+                        <li class="menu-list-item">
+                            <div class="menu-item-info">
+                                <div class="menu-item-name">Breezer 330 ml (Cranberry/Jamaican/Black Berry)</div>
+                            </div>
+                            <div class="price-controls-container">
+                                <div class="item-price">₹270</div>
+                                <div class="item-controls" data-name="Breezer 330 ml" data-price="270">
+                                    <button class="add-to-cart-btn" onclick="addToCart(this)">Add</button>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="menu-list-item">
+                            <div class="menu-item-info">
+                                <div class="menu-item-name">Red Bull</div>
+                            </div>
+                            <div class="price-controls-container">
+                                <div class="item-price">₹190</div>
+                                <div class="item-controls" data-name="Red Bull" data-price="190">
+                                    <button class="add-to-cart-btn" onclick="addToCart(this)">Add</button>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="menu-list-item">
+                            <div class="menu-item-info">
+                                <div class="menu-item-name">Tonic Water</div>
+                            </div>
+                            <div class="price-controls-container">
+                                <div class="item-price">₹100</div>
+                                <div class="item-controls" data-name="Tonic Water" data-price="100">
+                                    <button class="add-to-cart-btn" onclick="addToCart(this)">Add</button>
+                                </div>
+                            </div>
+                        </li>
                     </ul>
                 </div>
             </div>
@@ -763,7 +884,7 @@
                         <li class="menu-list-item"><div class="menu-item-info"><div class="menu-item-name">Cheese Paratha</div></div><div class="price-controls-container"><div class="item-price">₹92</div><div class="item-controls" data-name="Cheese Paratha" data-price="92"><button class="add-to-cart-btn" onclick="addToCart(this)">Add</button></div></div></li>
                         <li class="menu-list-item"><div class="menu-item-info"><div class="menu-item-name">Chicken Kheema Paratha</div></div><div class="price-controls-container"><div class="item-price">₹234</div><div class="item-controls" data-name="Chicken Kheema Paratha" data-price="234"><button class="add-to-cart-btn" onclick="addToCart(this)">Add</button></div></div></li>
                     </ul>
-                    
+
                     <h3 style="color: #B22222; margin-top: 18px;">EGG</h3>
                     <ul class="menu-list">
                         <li class="menu-list-item"><div class="menu-item-info"><div class="menu-item-name">Boiled Egg</div></div><div class="price-controls-container"><div class="item-price">₹54</div><div class="item-controls" data-name="Boiled Egg" data-price="54"><button class="add-to-cart-btn" onclick="addToCart(this)">Add</button></div></div></li>
@@ -773,7 +894,7 @@
                         <li class="menu-list-item"><div class="menu-item-info"><div class="menu-item-name">Egg Pakoda</div></div><div class="price-controls-container"><div class="item-price">₹100</div><div class="item-controls" data-name="Egg Pakoda" data-price="100"><button class="add-to-cart-btn" onclick="addToCart(this)">Add</button></div></div></li>
                         <li class="menu-list-item"><div class="menu-item-info"><div class="menu-item-name">Egg Tandoori</div></div><div class="price-controls-container"><div class="item-price">₹190</div><div class="item-controls" data-name="Egg Tandoori" data-price="190"><button class="add-to-cart-btn" onclick="addToCart(this)">Add</button></div></div></li>
                     </ul>
-            </div>
+                </div>
                 <!-- CHINESE MENU SECTION -->
                 <div style="text-align:center; margin: 32px 0 16px 0;"><h2 class="section-title" style="color: #FFD700; font-size:2rem;">CHINESE</h2></div>
                 <div class="menu-section">
@@ -999,7 +1120,7 @@
                         <li class="menu-list-item"><div class="menu-item-info"><div class="menu-item-name">Chana Garlic Oil Fry</div></div><div class="price-controls-container"><div class="item-price">₹126</div><div class="item-controls" data-name="Chana Garlic Oil Fry" data-price="126"><button class="add-to-cart-btn" onclick="addToCart(this)">Add</button></div></div></li>
                         <li class="menu-list-item"><div class="menu-item-info"><div class="menu-item-name">Bhel</div></div><div class="price-controls-container"><div class="item-price">₹95</div><div class="item-controls" data-name="Bhel" data-price="95"><button class="add-to-cart-btn" onclick="addToCart(this)">Add</button></div></div></li>
                         <li class="menu-list-item"><div class="menu-item-info"><div class="menu-item-name">Toast Sandwich</div></div><div class="price-controls-container"><div class="item-price">₹110</div><div class="item-controls" data-name="Toast Sandwich" data-price="110"><button class="add-to-cart-btn" onclick="addToCart(this)">Add</button></div></div></li>
-                        
+
                     </ul>
                 </div>
                 <div class="menu-section">
@@ -1034,7 +1155,7 @@
                 </div>
             </div>
         </div>
-        
+
         <!-- Alcohol Screen -->
         <div id="alcohol-screen" class="screen">
             <div class="screen-header">
@@ -1740,48 +1861,9 @@
                         </li>
                     </ul>
                 </div>
-                <!-- BREEZER & SOFT DRINKS SECTION -->
-                <div class="menu-section">
-                    <h2 class="section-title">BREEZER & SOFT DRINKS</h2>
-                    <ul class="menu-list">
-                        <li class="menu-list-item">
-                            <div class="menu-item-info">
-                                <div class="menu-item-name">Breezer 330 ml (Cranberry/Jamaican/Black Berry)</div>
-                            </div>
-                            <div class="price-controls-container">
-                                <div class="item-price">₹270</div>
-                                <div class="item-controls" data-name="Breezer 330 ml" data-price="270">
-                                    <button class="add-to-cart-btn" onclick="addToCart(this)">Add</button>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="menu-list-item">
-                            <div class="menu-item-info">
-                                <div class="menu-item-name">Red Bull</div>
-                            </div>
-                            <div class="price-controls-container">
-                                <div class="item-price">₹190</div>
-                                <div class="item-controls" data-name="Red Bull" data-price="190">
-                                    <button class="add-to-cart-btn" onclick="addToCart(this)">Add</button>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="menu-list-item">
-                            <div class="menu-item-info">
-                                <div class="menu-item-name">Tonic Water</div>
-                            </div>
-                            <div class="price-controls-container">
-                                <div class="item-price">₹100</div>
-                                <div class="item-controls" data-name="Tonic Water" data-price="100">
-                                    <button class="add-to-cart-btn" onclick="addToCart(this)">Add</button>
-                                </div>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
             </div>
         </div>
-        
+
         <!-- Cart Screen -->
         <div id="cart-screen" class="screen">
             <div class="screen-header">
@@ -1802,11 +1884,11 @@
                         <h3>Total: ₹<span id="cart-total-amount">0</span></h3>
                         <p style="color: #666; font-size: 14px;">Inclusive of all taxes</p>
                     </div>
-                    <button class="order-btn" onclick="placeOrder()">Place Order</button>
+                    <button class="order-btn">Call Waiter to Order</button>
                 </div>
             </div>
         </div>
-        
+
         <!-- Offers Screen -->
         <div id="offers-screen" class="screen">
             <div class="screen-header">
@@ -1847,13 +1929,13 @@
                             <div style="font-size: 64px; margin-bottom: 16px;">🎉</div>
                             <h2 style="color: #FFC72C; margin-bottom: 16px;" id="offer-title">Congratulations!</h2>
                             <p style="color: white; margin-bottom: 20px;" id="offer-description">Your offer has been activated</p>
-                            
-                            <div style="background-color: #FFC72C; border: 2px dashed #C11B1F; border-radius: 8px; padding: 20px; margin: 20px 0; text-align: center;">
+
+                            <div style="background-color: #FFC72C; border: 2px dashed #eb2529; border-radius: 8px; padding: 20px; margin: 20px 0; text-align: center;">
                                 <p style="color: #666; font-size: 0.875rem; margin-bottom: 8px;">Your Offer Code</p>
-                                <p style="color: #C11B1F; font-size: 2rem; font-weight: bold; margin-bottom: 8px;">KFPILOT</p>
+                                <p style="color: #eb2529; font-size: 2rem; font-weight: bold; margin-bottom: 8px;">KFPILOT</p>
                                 <p style="color: #666; font-size: 0.875rem;">Show this code to your server</p>
                             </div>
-                            
+
                             <button class="form-button" onclick="applyOffer()" style="margin-bottom: 10px;">Apply Offer</button>
                             <button class="form-button" onclick="backToOffers()" style="background-color: #666;">Back to Offers</button>
                         </div>
@@ -1901,12 +1983,12 @@
 
             if (item && item.quantity > 0) {
                 itemData.innerHTML = `
-                    <div class="quantity-controls">
-                        <button class="quantity-btn" onclick="decreaseQuantity('${name.replace(/'/g, "\\'")}', '${size}')">-</button>
-                        <span>${item.quantity}</span>
-                        <button class="quantity-btn" onclick="increaseQuantity('${name.replace(/'/g, "\\'")}', '${size}')">+</button>
-                    </div>
-                `;
+                        <div class="quantity-controls">
+                            <button class="quantity-btn" onclick="decreaseQuantity('${name.replace(/'/g, "\\'")}', '${size}')">-</button>
+                            <span>${item.quantity}</span>
+                            <button class="quantity-btn" onclick="increaseQuantity('${name.replace(/'/g, "\\'")}', '${size}')">+</button>
+                        </div>
+                    `;
             }
         }
 
@@ -1950,12 +2032,12 @@
                     const cartItem = cart.find(item => item.key === key);
                     if (cartItem && cartItem.quantity > 0) {
                         itemData.innerHTML = `
-                            <div class="quantity-controls">
-                                <button class="quantity-btn" onclick="decreaseQuantity('${name.replace(/'/g, "\\'")}', '${size}')">-</button>
-                                <span>${cartItem.quantity}</span>
-                                <button class="quantity-btn" onclick="increaseQuantity('${name.replace(/'/g, "\\'")}', '${size}')">+</button>
-                            </div>
-                        `;
+                                <div class="quantity-controls">
+                                    <button class="quantity-btn" onclick="decreaseQuantity('${name.replace(/'/g, "\\'")}', '${size}')">-</button>
+                                    <span>${cartItem.quantity}</span>
+                                    <button class="quantity-btn" onclick="increaseQuantity('${name.replace(/'/g, "\\'")}', '${size}')">+</button>
+                                </div>
+                            `;
                     } else {
                         itemData.innerHTML = `<button class="add-to-cart-btn" onclick="addToCart(this)" data-name="${name}" data-price="${itemData.getAttribute('data-price') || ''}" data-size="">Add</button>`;
                         itemData.setAttribute('data-name', name);
@@ -2001,21 +2083,21 @@
                 const displayName = item.size ? `${item.name} (${item.size})` : item.name;
 
                 cartHTML += `
-                    <div class="cart-item">
-                        <div class="cart-item-details">
-                            <div class="cart-item-name">${displayName}</div>
-                            <div class="cart-item-price">₹${item.price} each</div>
+                        <div class="cart-item">
+                            <div class="cart-item-details">
+                                <div class="cart-item-name">${displayName}</div>
+                                <div class="cart-item-price">₹${item.price} each</div>
+                            </div>
+                            <div class="quantity-controls">
+                                <button class="quantity-btn" onclick="decreaseQuantity('${item.name.replace(/'/g, "\\'")}', '${item.size}')">-</button>
+                                <span>${item.quantity}</span>
+                                <button class="quantity-btn" onclick="increaseQuantity('${item.name.replace(/'/g, "\\'")}', '${item.size}')">+</button>
+                            </div>
+                            <div style="margin-left: 10px; font-weight: bold;">
+                                ₹${itemTotal}
+                            </div>
                         </div>
-                        <div class="quantity-controls">
-                            <button class="quantity-btn" onclick="decreaseQuantity('${item.name.replace(/'/g, "\\'")}', '${item.size}')">-</button>
-                            <span>${item.quantity}</span>
-                            <button class="quantity-btn" onclick="increaseQuantity('${item.name.replace(/'/g, "\\'")}', '${item.size}')">+</button>
-                        </div>
-                        <div style="margin-left: 10px; font-weight: bold;">
-                            ₹${itemTotal}
-                        </div>
-                    </div>
-                `;
+                    `;
             });
 
             container.innerHTML = cartHTML;
@@ -2091,7 +2173,7 @@
                 const priceDiv = item.querySelector('.item-price');
                 const addBtn = item.querySelector('.item-controls');
                 sizeSelector.querySelectorAll('.size-btn').forEach(btn => {
-                    btn.addEventListener('click', function() {
+                    btn.addEventListener('click', function () {
                         // Remove selected from all
                         sizeSelector.querySelectorAll('.size-btn').forEach(b => b.classList.remove('selected'));
                         btn.classList.add('selected');
@@ -2113,12 +2195,12 @@
             const cartItem = cart.find(item => item.key === key);
             if (cartItem && cartItem.quantity > 0) {
                 controlsDiv.innerHTML = `
-                    <div class="quantity-controls">
-                        <button class="quantity-btn" onclick="decreaseQuantity('${name.replace(/'/g, "\\'")}', '${size}')">-</button>
-                        <span>${cartItem.quantity}</span>
-                        <button class="quantity-btn" onclick="increaseQuantity('${name.replace(/'/g, "\\'")}', '${size}')">+</button>
-                    </div>
-                `;
+                        <div class="quantity-controls">
+                            <button class="quantity-btn" onclick="decreaseQuantity('${name.replace(/'/g, "\\'")}', '${size}')">-</button>
+                            <span>${cartItem.quantity}</span>
+                            <button class="quantity-btn" onclick="increaseQuantity('${name.replace(/'/g, "\\'")}', '${size}')">+</button>
+                        </div>
+                    `;
             } else {
                 controlsDiv.innerHTML = `<button class="add-to-cart-btn" onclick="addToCart(this)" data-name="${name}" data-price="${price}" data-size="${size}">Add</button>`;
                 controlsDiv.setAttribute('data-name', name);
@@ -2129,7 +2211,7 @@
 
         // Patch addToCart to update controls after adding
         const originalAddToCart = addToCart;
-        addToCart = function(button) {
+        addToCart = function (button) {
             originalAddToCart(button);
             // After adding, update controls for the current size
             const item = button.closest('.menu-list-item');
@@ -2146,12 +2228,12 @@
                     const cartItem = cart.find(item => item.key === key);
                     if (cartItem && cartItem.quantity > 0) {
                         itemData.innerHTML = `
-                            <div class="quantity-controls">
-                                <button class="quantity-btn" onclick="decreaseQuantity('${name.replace(/'/g, "\\'")}', '${size}')">-</button>
-                                <span>${cartItem.quantity}</span>
-                                <button class="quantity-btn" onclick="increaseQuantity('${name.replace(/'/g, "\\'")}', '${size}')">+</button>
-                            </div>
-                        `;
+                                <div class="quantity-controls">
+                                    <button class="quantity-btn" onclick="decreaseQuantity('${name.replace(/'/g, "\\'")}', '${size}')">-</button>
+                                    <span>${cartItem.quantity}</span>
+                                    <button class="quantity-btn" onclick="increaseQuantity('${name.replace(/'/g, "\\'")}', '${size}')">+</button>
+                                </div>
+                            `;
                     }
                 }
             }
@@ -2159,7 +2241,7 @@
 
         // Patch updateAllItemControls to update controls for all menu-list-items with size selectors
         const originalUpdateAllItemControls = updateAllItemControls;
-        updateAllItemControls = function() {
+        updateAllItemControls = function () {
             document.querySelectorAll('.menu-list-item').forEach(item => {
                 const name = item.querySelector('.menu-item-name').textContent.trim();
                 const sizeSelector = item.querySelector('.size-selector');
@@ -2176,12 +2258,12 @@
                     const cartItem = cart.find(item => item.key === key);
                     if (cartItem && cartItem.quantity > 0) {
                         itemData.innerHTML = `
-                            <div class="quantity-controls">
-                                <button class="quantity-btn" onclick="decreaseQuantity('${name.replace(/'/g, "\\'")}', '${size}')">-</button>
-                                <span>${cartItem.quantity}</span>
-                                <button class="quantity-btn" onclick="increaseQuantity('${name.replace(/'/g, "\\'")}', '${size}')">+</button>
-                            </div>
-                        `;
+                                <div class="quantity-controls">
+                                    <button class="quantity-btn" onclick="decreaseQuantity('${name.replace(/'/g, "\\'")}', '${size}')">-</button>
+                                    <span>${cartItem.quantity}</span>
+                                    <button class="quantity-btn" onclick="increaseQuantity('${name.replace(/'/g, "\\'")}', '${size}')">+</button>
+                                </div>
+                            `;
                     } else {
                         itemData.innerHTML = `<button class="add-to-cart-btn" onclick="addToCart(this)" data-name="${name}" data-price="${itemData.getAttribute('data-price') || ''}" data-size="">Add</button>`;
                         itemData.setAttribute('data-name', name);
